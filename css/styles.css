@@ -381,7 +381,7 @@ color:#000;
 #features .media.service-box:first-child {
   margin-top: 80px;
 }
-#services, #features {
+#services, #features, #education {
   padding: 100px 0 75px;
 }
 .media.service-box {
@@ -588,10 +588,14 @@ background: transparent;
 border: 1px solid rgba(255, 255, 255, 0.2);
 margin: 0 8px;
 }
-#about {
+.welcome-image{
+  padding: 100px ;
+}
+#about, #work-experience{
   padding: 100px 0;
   background: #F0F0F0;
 }
+
 /*Team*/ 
 #our-team {
   padding: 100px 0;
@@ -732,7 +736,7 @@ border-right: 1px solid #E6E6E6;
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #eee;
 }
-#business-stats {
+#business-stats , #project{
   padding: 100px 0 70px;
   background: #222222;
   background-size: cover;
@@ -830,6 +834,56 @@ color:#fff;
 }
 #contact-us h1,
 #contact-us h2 {
+}
+#contact-us .team-member {
+  padding: 0; 
+  margin: 0 auto;
+}
+#contact-us .team-member .team-img {
+  margin: 0;
+
+}
+#contact-us .team-member .team-info { 
+  background: #E5E5E5;
+  color: #222222;
+  padding: 7px 0;
+  margin: 0 auto; 
+  margin-left: 350px;
+  margin-right: 350px;
+} 
+#contact-us .team-member:hover .social-icons > li > a {
+  color: #48B1DF;
+}
+#contact-us .introduction{
+  padding: 20px;
+  margin-left:180px;
+  margin-right:180px  
+}
+#contact-us .social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 457px;
+  margin-right: 454px;  
+  -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+    transition: height 1s;
+  background: #F4F4F4;
+  padding: 6px 0 6px;
+}
+#contact-us .social-icons > li {
+  display: inline-block;
+}
+#contact-us .social-icons > li > a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #222222;
+  background: #E5E5E5;
+  border-radius: 3px;
+  border: 1px solid #E5E5E5;
+  margin: 5px 10px;
 }
 /*Contact*/
  .contact-info{
