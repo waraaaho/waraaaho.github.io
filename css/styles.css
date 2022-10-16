@@ -51,6 +51,7 @@ hr {
   background-image: -ms-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
 }
 .section-header {
+  color: #000000;
   margin-bottom: 50px;
 }
 .section-header p{
@@ -58,7 +59,7 @@ text-align:center;
 }
 .section-header .section-title {
   font-size: 44px;
-  color: #F33131;
+  color: #0000CC;
   position: relative;
   padding-bottom: 20px;
   margin: 0 0 20px;  
@@ -739,6 +740,7 @@ border-right: 1px solid #E6E6E6;
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #eee;
 }
+
 #business-stats , #project{
   padding: 100px 0 70px;
   background: #222222;
@@ -911,7 +913,22 @@ border-radius: 50%;
 position: absolute;
 width: 100px;
 }
-
+/*Certificate*/
+#certificate{
+  Padding: 100px 0;
+  background: #F0F0F0;
+}
+.certificate {
+  Column-width: 400px;
+  
+}
+table {
+  Font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+table th{ text-align: center; background-color: #808080;}
+table tr{ text-align: center; background-color: #D3D3D3; }
 /***********************
 ********* Footer ******
 ************************/
