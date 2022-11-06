@@ -7,7 +7,8 @@
     
     <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
     <button type="button"
-    onclick="document.getElementById('demo').innerHTML = query()">
+    onclick="document.getElementById('demo').innerHTML = query().then((response) => {
+      console.log(JSON.stringify(response))});">
     Click me.</button>
 
     <p id="demo"></p>
@@ -49,12 +50,8 @@ async function query(data = {"inputs": "Can you please let us know more details 
 		}
 	);
 	const result = await response.json();
-	//return result;
-  result.then((response) => {
-	console.log(JSON.stringify(response));
-  return result.then(response)
-});
+  console.log(typeof result)
+	return result;
 }
 
-query()
 </script>
