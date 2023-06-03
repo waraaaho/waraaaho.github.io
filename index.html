@@ -176,15 +176,19 @@
         </div>
         <div class="row">
             <div class="example">
+                <h3 class="wow fadeInDown">University of Oxford </h3>
+                <h4 class="wow fadeInDown">Artificial Intelligence: Cloud and Edge Implementations <a href="./Academic_Cert/Oxford_AI_cert.pdf" target="_blank" rel="noopener noreferrer">Certificate</a></h4>   
+            </div>  
+            <div class="example">
                 <h3 class="wow fadeInDown">HKUST </h3>
-                <h4 class="wow fadeInDown">Major in <a href="https://dsct.ust.hk/" target="_blank" rel="noopener noreferrer">Data Science</a></h4>
+                <h4 class="wow fadeInDown">Major in <a href="https://dsct.ust.hk/" target="_blank" rel="noopener noreferrer">Data Science</a><a href="./Academic_Cert/scanned_diploma.pdf">Certificate </a></h4>
                 <h4 class="wow fadeInDown">Minor in <a href="https://www.math.hkust.edu.hk/ug/minor.php" target="_blank" rel="noopener noreferrer">Mathematics</a></h4>
             </div>  
         </div>
     </div>
 
 </section>
-
+    
 <section id="project" >
     <div class="container">
 
@@ -221,10 +225,12 @@
     <footer id="footer">
         <div class="container">
             <!--&copy;--> You have reach the bottom. Hope you have a good day.
-            <p>2022 Howard Ho </p>
+            <p><div id="year"></div> Howard Ho </p>
         </div>
     </footer><!--/#footer-->
-
+    <script>
+        document.getElementById("year").textContent = new Date() //.getFullYear();
+    </script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script> 
     <script src="js/mousescroll.js"></script>
