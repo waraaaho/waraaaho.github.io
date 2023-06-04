@@ -745,7 +745,7 @@ border-right: 1px solid #E6E6E6;
   padding: 100px 0 70px;
   background: #F0F0F0;
   background-size: cover;
-  color: #fff;
+  /*color: #fff;*/
 }
 #business-stats h1,
 #business-stats h2,
