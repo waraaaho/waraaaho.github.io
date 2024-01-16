@@ -22,8 +22,8 @@
 <body id="home">
 
     <header id="header">
-        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
-            <div class="container">
+        <nav id="main-nav"  class="navbar navbar-expand-lg bg-body-tertiary" role="banner">
+            <div class="container-fluid">
                 <!-- disable logo button 
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -36,16 +36,24 @@
                 </div> 
                 -->
 				
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="index.html">Home</a></li> 
-                        <li class="scroll"><a href="#contact-me">Myself</a></li>  
-                        <li class="scroll"><a href="#work-experience">Work Experience</a></li>
-                        <li class="scroll"><a href="#education">Education</a></li>
-                        <li class="scroll"><a href="#project">Project</a></li> 
-                        <li class="scroll"><a href="pages/cert.html">Certificate</a></li>
-                        <li class="scroll"><a href="pages/life.html">MyLife</a></li>  
-                        <li class="scroll"><a href="pages/ai-singer.html">AI Singer</a></li>  
+                <div class="collapse navbar-collapse" style="padding: 20px;">
+                    <ul class="navbar-nav mx-auto my-2 my-lg-0  navbar-nav-scroll">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="#contact-me">Myself</a></li>  
+                        <li class="nav-item"><a class="nav-link" href="#work-experience">Work Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Project
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Natural Language Processing</a></li>
+                                <li><a class="dropdown-item" href="#">AI Singer</a></li>
+                                <li><a class="dropdown-item" href="#">Stock Rebalancer</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="pages/cert.html">Certificate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/life.html">MyLife</a></li>  
                         
                         <!-- dropdown example code
                         <li class="nav-item dropdown">
@@ -91,10 +99,11 @@
     </section>
     -->      
     
-    <!--/#main-slider-->
+    <!--/#main-slider
 	<div class="heroText">
 	<div class="container">
 	<div class="row">
+    -->
 
     <!--<div class="col-md-7 col-sm-9 col-xs-12"> 
     
@@ -113,7 +122,7 @@
 
 <section id="contact-me">
     <div class="container">
-        <div class="section-header">
+        <div class="section-header" style="margin-top:-60px;">
             <h2 class="section-title wow fadeInDown">Howard Ho, Chuen Ho</h2>
             
             <div class="introduction">
@@ -125,7 +134,7 @@
             <div class="col-sm ">
                 <div class="team-member wow fadeInUp" data-wow-duration="800ms" data-wow-delay="0ms">
                     <div class="team-img">
-                        <center><img style='height: 40%; width: 40%;' class="img-responsive" src="images/team/lateral.jpeg" alt=""></center>
+                        <img  class="img-responsive" src="images/team/lateral.jpeg" alt="">
                     </div>
                     <div class="team-info">
                         <h3>Machine Learning Engineer</h3><h3>Data Analyst | Tech Entrepreneur</h3>
@@ -195,11 +204,13 @@
         </div>
         <div class="row">
             <div class="example">
-                <h3 class="wow fadeInDown">University of Oxford </h3> <h4><a href="./Academic_Cert/Oxford_AI_cert.pdf" target="_blank" rel="noopener noreferrer">Certificate </a></h4>
-                <h4 class="wow fadeInDown">Artificial Intelligence: Cloud and Edge Implementations </h4>   
+                <h3 class="wow fadeInDown">University of Oxford  <a href="./Academic_Cert/Oxford_AI_cert.pdf" style="font-size: 22px;" target="_blank" rel="noopener noreferrer">Certificate </a> </h3>
+                <h4 class="wow fadeInDown">Artificial Intelligence: Cloud and Edge Implementations </h4>  
+                
+ 
             </div>  
             <div class="example">
-                <h3 class="wow fadeInDown">HKUST </h3> <h4><a href="./Academic_Cert/scanned_diploma.pdf">Certificate </a></h4>
+                <h3 class="wow fadeInDown">HKUST <a href="./Academic_Cert/scanned_diploma.pdf" style="font-size: 22px;">Certificate </a></h3>
                 <h4 class="wow fadeInDown">Major in <a href="https://dsct.ust.hk/" target="_blank" rel="noopener noreferrer">Data Science</a></h4>
                 <h4 class="wow fadeInDown">Minor in <a href="https://www.math.hkust.edu.hk/ug/minor.php" target="_blank" rel="noopener noreferrer">Mathematics</a></h4>
             </div>  
@@ -214,17 +225,17 @@
         <div class="section-header">
             <h2 class="section-title wow fadeInDown">Project</h2>
         </div>
-        <div id="project-carousel" class="carousel slide" data-ride="carousel">
+        <div id="project-carousel" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#project-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#project-carousel" data-slide-to="1"></li>
-                <li data-target="#project-carousel" data-slide-to="2"></li>
+            <div class="carousel-indicators">
+                <button data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button data-bs-target="#project-carousel" data-bs-slide-to="1"></button>
+                <button data-bs-target="#project-carousel" data-bs-slide-to="2"></button>
                 <!-- Add more indicators for additional projects -->
-            </ol>
+            </div>
             <!-- Slides -->
-            <div class="carousel-inner">
-                <div class="item active">
+            <div class="carousel-inner" style="padding-bottom:50px ; padding-right: 50px;">
+                <div class="carousel-item active">
                     <div class="carousel-caption">
                         <!-- give a caption -->
                         <h2 class="wow fadeInDown"> </h2>
@@ -255,7 +266,7 @@
                         </div> 
                     </div>
                 </div>
-                <div class="item ">
+                <div class="carousel-item ">
                     <div class="carousel-caption wow fadeInDown">
                         <h2 class="wow fadeInDown"> </h2>
 
@@ -277,7 +288,7 @@
                     </div>
                 </div>
                 <!-- Add more carousel items for additional projects -->
-                <div class="item ">
+                <div class="carousel-item ">
                     <div class="carousel-caption">
                         <!-- give a caption -->
                         <h2 class="wow fadeInDown"> </h2>
@@ -285,7 +296,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <img class=" " src="images/project/rebalancing.jpeg" style='width: 100%; height: 100%;' alt="Project Image" >
+                            <img class="" src="images/project/rebalancing.jpeg" style='width: 100%; height: 100%;' alt="Project Image" >
                         </div>
                         <!-- text content-->
                         <div class="col-md-6">
@@ -312,14 +323,14 @@
                 </div>
             </div>
             <!-- Controls -->
-            <a class="left carousel-control" href="#project-carousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#project-carousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <button class="carousel-control-prev" type="button" data-bs-target="#project-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#project-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 
@@ -338,7 +349,7 @@
         document.getElementById("year").textContent = new Date() //.getFullYear();
     </script>
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/bootstrap.bundle.min.js"></script> 
     <script src="js/mousescroll.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
