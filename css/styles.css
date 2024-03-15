@@ -597,8 +597,8 @@ margin: 0 8px;
   background: #F0F0F0;
 }
 .example{
-  padding-left:180px;
-  padding-right:180px;
+  padding-left:10%;
+  padding-right:10%;
 }
 /*Team*/ 
 #our-team {
@@ -844,31 +844,31 @@ color:#fff;
   padding: 0; 
   margin: 0 auto;
 }
-#contact-me .team-member .team-img {
-  margin: 0;
+#contact-me .team-member .team-img img{
+  height: 50%; width: 50%;
 
 }
 #contact-me .team-member .team-info { 
   background: #E5E5E5;
   color: #222222;
   padding: 7px 0;
-  margin-left: 350px;
-  margin-right: 350px;
+  margin-left: 25%;
+  margin-right: 25%;
 } 
 #contact-me .team-member:hover .social-icons > li > a {
   color: #48B1DF;
 }
 #contact-me .introduction{
   padding: 20px;
-  margin-left:180px;
-  margin-right:180px;  
+  margin-left:10%;
+  margin-right:10%;  
 }
 #contact-me .social-icons {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: 350px;
-  margin-right: 350px;  
+  margin-left: 25%;
+  margin-right: 25%;  
   -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
     transition: height 1s;
   background: #F4F4F4;
